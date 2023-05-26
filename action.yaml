@@ -1,6 +1,5 @@
 # action.yml
-name: 'xlyk-tagliatelle'
-author: 'Kyle Hanks (github.com/xlyk)'
+name: 'tagliatelle'
 description: 'Utility to update tags and version numbers in config files'
 inputs:
   user:
@@ -23,7 +22,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://xlyk/tagliatelle:latest'
+  image: 'docker://public.ecr.aws/m2s6f1t0/tagliatelle:latest'
   args:
     - -repo
     - ${{ inputs.repo }}

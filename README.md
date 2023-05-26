@@ -1,6 +1,6 @@
 # tagliatelle-action
 
-### GitHub action for [xlyk/tagliatelle](https://github.com/xlyk/tagliatelle)
+### GitHub action for [/tagliatelle](https://github.com/cesppa/tagliatelle)
 
 Utility to update tags and version numbers in project files. Useful for config files, kustomize projects, and helm
 charts.
@@ -19,11 +19,15 @@ charts.
 ## Example usage
 
 ```yaml
+<<<<<<< Updated upstream
 uses: xlyk/tagliatelle@v2
+=======
+uses: cesppa/tagliatelle@main
+>>>>>>> Stashed changes
 with:
   user: 'your-username'
   token: "${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}"
-  repo: 'https://github.com/xlyk/tagliatelle.git'
+  repo: 'https://github.com/cesppa/tagliatelle.git'
   file: 'sample.yaml'
   tag: '1.0.0.1'
   pattern: '(app1"\n.*newTag: ")(.*?)(")'
