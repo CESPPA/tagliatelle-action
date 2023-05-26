@@ -19,11 +19,7 @@ charts.
 ## Example usage
 
 ```yaml
-<<<<<<< Updated upstream
-uses: xlyk/tagliatelle@v2
-=======
 uses: cesppa/tagliatelle@main
->>>>>>> Stashed changes
 with:
   user: 'your-username'
   token: "${{ secrets.GH_ACTIONS_ACCESS_TOKEN }}"
